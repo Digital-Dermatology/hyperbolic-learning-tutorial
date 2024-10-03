@@ -1,1 +1,1 @@
-# Structured Probabilistic Inference and Generative Modeling 2024 
+# Hyperbolic Learning in Action 2024 
