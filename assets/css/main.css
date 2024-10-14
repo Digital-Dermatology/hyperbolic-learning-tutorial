@@ -42,6 +42,50 @@ a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item
 
 blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 
+.header-background {
+    position: relative; /* Position relative to the page */
+    background-image: url('/assets/img/background.png'); /* Set your background image here */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    padding: 1px; /* Add padding for spacing */
+}
+
+.header-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the two divs */
+    align-items: center; /* Center vertically */
+}
+
+.gif-container {
+    flex: 1; /* Allow the GIF container to take up space */
+    display: flex;
+    justify-content: center; /* Center the GIF horizontally */
+    align-items: center; /* Center the GIF vertically */
+}
+.post-title{
+  color:white;
+}
+
+.gif-image {
+    max-width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-container {
+    flex: 1; /* Allow the text container to take up space */
+    text-align: left; /* Align text to the left */
+    color: white; /* Change text color to white for visibility */
+}
+
+.desc {
+    margin-top: 10px; /* Add space above the subtitle */
+}
+
+.header-content {
+    position: relative; /* Make header content above the overlay */
+    z-index: 2; /* Ensure header content is above the overlay */
+}
+
 .equation { margin-bottom: 1rem; text-align: center; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
