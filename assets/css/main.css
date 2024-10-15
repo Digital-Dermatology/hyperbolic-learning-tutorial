@@ -44,7 +44,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .header-background {
     position: relative; /* Position relative to the page */
-    background-image: url('/assets/img/background.png'); /* Set your background image here */
+    background-image: url('../img/background.png'); /* Set your background image here */
     background-size: cover; /* Cover the entire header */
     background-position: center; /* Center the background image */
     padding: 1px; /* Add padding for spacing */

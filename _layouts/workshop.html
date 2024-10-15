@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
+---
+layout: default
+---
 
 <div class="page-content">
-    <div class="header-background">
-        <div class="header-content">
-            <div class="gif-container">
-                <img src="/assets/img/hyperboloid_rotation_white.gif" alt="GIF Description" class="gif-image">
-            </div>
-            <div class="text-container">
-                <h1 class="post-title">
-                    {% if site.title == "blank" -%} 
-                        AMLD EPFL 2025 Workshop on <br>
-                        <span class="font-weight-bold" style="color: white;">Hyperbolic Learning in Action</span>
-                    {%- else -%} 
-                        {{ site.title }} 
-                    {%- endif %}
-                </h1>
-                <p class="desc" style="color: white;"><b>14.02.2025 | 09:00AM  |  WS50 Garden 3BC</b></p>
-            </div>
+  <div class="header-background">
+    <div class="container-fluid"> <!-- Bootstrap container for responsive content alignment -->
+      <div class="row align-items-center"> <!-- Row with vertical centering -->
+        <div class="col-md-6"> <!-- Image container taking up half the width on medium screens and above -->
+          <img src="{{ site.baseurl }}/assets/img/hyperboloid_rotation_white.gif" alt="Hyperboloid Rotation GIF" class="img-fluid"> <!-- img-fluid makes the image responsive -->
         </div>
+        <div class="col-md-6 text-white text-center text-md-left"> <!-- Text container, centered on small screens and left-aligned on medium screens and above -->
+          <h1 class="post-title">
+            {% if site.title == "blank" -%} 
+                AMLD EPFL 2025 Workshop on <br>
+                <span class="font-weight-bold" style="color: white;">Hyperbolic Learning in Action</span>
+            {%- else -%} 
+                {{ site.title }} 
+            {%- endif %}
+          </h1>
+          <p class="desc font-weight-bold text-white">14.02.2025 | 09:00AM  |  WS50 Garden 3BC</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+
     
     <div class="wrapper container mt-5">
 
@@ -78,84 +76,41 @@
     Whether you're just starting your journey or are already familiar with deep learning, this tutorial 
     is your guide to understanding and utilizing hyperbolic geometry in computer vision.
   </p>
+
+</div>
+
+<div class="speakers">
+  <h2 class="post-title"><span class="font-weight-bold">Organisers</span></h2>
+  <div class="row"> <!-- Start of the row -->
+    <div class="col-md-6 col-lg-4"> <!-- Adjust column width as needed -->
+      <div class="card hoverable">
+        <img src="{{ site.baseurl }}/assets/img/simone.jpg" alt="Simone Lionetti">
+        <div class="card-body">
+          <h2 class="card-title">Simone Lionetti</h2>
+          <h6 class="card-text">Lucerne University of Applied Sciences and Arts</h6>
+          <div class="affiliate">
+            <a href="https://scholar.google.com/citations?user=WCvkBwkAAAAJ&hl=en" title="GoogleScholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <div class="speakers">
-      <h2 class="post-title"><span class="font-weight-bold">Organisers</span></h2>
-
-      <p class="card-text">
-      </p>
-      <div class="grid">
-
-
-
-        <div class="grid-item">
-          <div class="card hoverable">
-
-
-            <img src="/assets/img/simone.jpg" srcset="">
-
-            <div class="card-body">
-              <h2 class="card-title">Simone Lionetti</h2>
-              <h6 class="card-text">Lucerne University of Applied Sciences and Arts
-                <div class="affiliate">
-
-                <!--  
-                  <a href="https://twitter.com/liyzhen2" title="Twitter" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                -->
-
-                  <a href="https://scholar.google.com/citations?user=WCvkBwkAAAAJ&hl=en" title="GooleScholar" target="_blank"
-                    rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
-
-                <!--  
-                  <a href="" title="Website" target="_blank" rel="noopener noreferrer"><i
-                      class="fas fa-address-card"></i></a>
-                -->
-
-                </div>
-              </h6>
-              <p class="card-text"></p>
-            </div>
+    <div class="col-md-6 col-lg-4"> <!-- Adjust column width as needed -->
+      <div class="card hoverable">
+        <img src="{{ site.baseurl }}/assets/img/alvaro.jpg" alt="Alvaro Gonzalez-Jimenez">
+        <div class="card-body">
+          <h2 class="card-title">Alvaro Gonzalez-Jimenez</h2>
+          <h6 class="card-text">University of Basel</h6>
+          <div class="affiliate">
+            <a href="https://scholar.google.com/citations?user=LbtKzVgAAAAJ&hl=en" title="GoogleScholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://alvarogonjim.github.io/" title="Website" target="_blank" rel="noopener noreferrer"><i class="fas fa-address-card"></i></a>
           </div>
         </div>
-
-        <div class="grid-item">
-          <div class="card hoverable">
-
-
-
-            <img src="/assets/img/alvaro.jpg" srcset="">
-
-            <div class="card-body">
-              <h2 class="card-title">Alvaro Gonzalez-Jimenez</h2>
-              <h6 class="card-text">University of Basel
-                <div class="affiliate">
-
-                  <a href="https://scholar.google.com/citations?user=LbtKzVgAAAAJ&hl=en" title="GooleScholar" target="_blank"
-                    rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
-
-
-                  <a href="https://alvarogonjim.github.io/" title="Website" target="_blank"
-                    rel="noopener noreferrer"><i class="fas fa-address-card"></i></a>
-
-                </div>
-              </h6>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-       </div>
-      
+      </div>
+    </div>
+  </div> <!-- End of the row -->
+</div>
+     
 
   </article>
  </div>
-
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
-
