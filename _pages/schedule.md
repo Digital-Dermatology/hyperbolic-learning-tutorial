@@ -30,11 +30,11 @@ nav_order: 2
       <tr>
   <tr class="header">
         <td>09:00 - 09:45</td>
-        <td>Non-Euclidean Geometry</td>
+        <td>Non-Euclidean Geometry - <i>Simone Lionetti</i></td>
   </tr>
   <tr class="header">
         <td>09:45 - 10:30</td>
-        <td>Deep Learning in Hyperbolic Space</td>
+        <td>Deep Learning in Hyperbolic Space - <i>Alvaro Gonzalez-Jimenez</i></td>
   </tr>
 
   <tr class="header" style="background-color:rgb(240, 240, 240);">
@@ -43,15 +43,15 @@ nav_order: 2
   </tr>
   <tr class="header">
         <td>11:00 - 11:15</td>
-        <td>Tools for Hyperbolic Learning</td>
+        <td>Tools for Hyperbolic Learning - <i>Alvaro Gonzalez-Jimenez</i></td>
   </tr>
 
   <tr class="header">
         <td>11:15 - 12:15</td>
-        <td>Hands-on Hyperbolic Network Training</td>
+        <td>Hands-on Hyperbolic Network Training - <i>Simone Lionetti</i></td>
   </tr>
 
   <tr class="header">
         <td>12:15 - 12:30</td>
-        <td>Learning and Conclusions</td>
+        <td>Learning and Conclusions - <i>Alvaro Gonzalez-Jimenez</i></td>
   </tr>
